@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 MCLD_ROOT_PATH := $(LOCAL_PATH)
 # For mcld.mk
-LLVM_ROOT_PATH := external/llvm
+LLVM_ROOT_PATH :=$(call get_llvm_root_path)
 MCLD_ENABLE_ASSERTION := true
 
 include $(CLEAR_VARS)

@@ -34,7 +34,6 @@ llvm_tblgen {
 
 cc_binary {
     name: "ld.mc",
-    sdclang: false,
     defaults: ["mcld-defaults"],
     host_supported: true,
     generated_headers: ["mcld-gen-options"],

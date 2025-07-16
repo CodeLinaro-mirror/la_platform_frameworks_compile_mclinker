@@ -36,6 +36,7 @@ cc_binary {
     name: "ld.mc",
     defaults: ["mcld-defaults"],
     host_supported: true,
+    sdclang: false,
     generated_headers: ["mcld-gen-options"],
 
     srcs: ["Main.cpp"],
